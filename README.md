@@ -16,6 +16,8 @@
 
     ○ Create a calculated field to categorize the customer ages into 4 groups “Teens”, “Young Adults”, “Middle Aged” and “Seniors”
 
+    <img width="584" alt="Screenshot 2024-06-16 at 7 03 04 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/f6e0fedd-2fa5-4ea0-a28d-5cc3d25bdd18">
+
     ○ Pull “Customer ID” into SIZE and apply “Count Distinct”
 
     ○ Change the Type of chart to PIE
