@@ -110,3 +110,90 @@
 3. Continue the above steps from step 7 to step 9.
 
   <img width="831" alt="Screenshot 2024-06-20 at 4 13 34 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/b952dd69-644b-4b06-8947-7af38014f9c5">
+
+
+### Season vs ShipType by Purchase Amount Heat Map
+
+1. Add “Ship Type” to Columns
+
+2. Add “Seasons” to rows
+
+3. Drag the “Purchase amount” to “Text” and make sure it measure operation is SUM
+
+4. Click dropdown - > select Format Number -> currency custom -> 0 decimal.
+
+5. Drag the “Purchase amount” to “Color” and make sure it measure operation is SUM
+
+6. Select “Square” from the “Chart Type” dropdown under “Marks” pane
+
+7. Customize color shade of the heatmap as required.
+
+   <img width="447" alt="Screenshot 2024-06-21 at 11 14 59 AM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/630d3012-2820-4de7-9252-2803525e76ca">
+
+
+### Create Rack N Stack for multiple parameters
+
+1. Create a Parameter by name “Display By”
+
+    a. Click the dropdown in “Data” pane and click “Create Parameter”
+
+   <img width="379" alt="Screenshot 2024-06-21 at 3 05 25 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/0bb5236c-449c-4e93-8b0e-1838fa07c1fa">
+
+    b. Name the field as “Display By”, Data type as “String”, allowable value as “List” and add all the fields that we require to be listed in the Rack and Stack “Display By” options.
+
+   <img width="289" alt="Screenshot 2024-06-21 at 3 06 59 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/47dffc4c-f133-437a-812b-ecba287d0e4c">
+
+    c. Click “OK”. The “Display By” is listed under “Parameters” section in “Data Pane”
+
+   <img width="99" alt="Screenshot 2024-06-21 at 3 07 13 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/da01abbd-c20b-431b-8293-0158a9ee1382">
+
+2. Create a parameter toggle(calculated field)  using “CASE” statement to match all the parameters that we listed in the “Display By” parameter.
+
+   <img width="615" alt="Screenshot 2024-06-21 at 3 09 17 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/cf6832de-6018-482b-953e-b1d33f694653">
+
+3. We want to display 3 columns “Previous Purchases”, “Purchase Amount” and “Review Rating” along with the values under the selected parameter in the first column.
+   Hence we create 4 Spacers by creating a calculated field with value “MIN(1)*
+
+   <img width="499" alt="Screenshot 2024-06-21 at 3 10 27 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/d8bb5d49-cdac-4db2-8f05-6c81512ae399">
+
+4. Add the spacers to columns and the parameter-toggle to rows
+
+  <img width="618" alt="Screenshot 2024-06-21 at 3 11 32 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/f52c1a55-1771-4111-8853-fcb331cb9285">
+
+5. Deselect “Show Header” from Parameter-Toggle
+
+  <img width="196" alt="Screenshot 2024-06-21 at 3 12 29 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/5c184531-dd8d-40e4-a836-b8bb41cf519b">
+
+6. Drag the Parameter-Toggle into “Text” under “Spacer4-Toggle”
+
+  <img width="143" alt="Screenshot 2024-06-21 at 3 13 21 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/b47976db-ea59-458b-ac5b-579d66099396">
+
+7. Drag the required value fields into “Text” under corresponding spacers.
+
+  <img width="536" alt="Screenshot 2024-06-21 at 3 14 16 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/f9836b08-e0ef-421b-ba24-9dc13dfe0ccf">
+
+8. Show or display the “Display By” parameter.
+
+  <img width="140" alt="Screenshot 2024-06-21 at 3 15 03 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/a52301be-6ce5-4fce-9fb2-3ac0d20dd9cf">
+
+9. Cosmetic updates
+    
+   a. Make everything Bold using “Edit Text” under “Text” in all spacers.
+   
+   b. Format review ratings to have 1 decimal value
+
+   <img width="234" alt="Screenshot 2024-06-21 at 3 15 57 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/b88c53d2-3bfa-48d5-80fd-e2e6450c01ef">
+
+   c. Deselect “Show Header” from all the spacers in the Row field.
+
+   <img width="132" alt="Screenshot 2024-06-21 at 3 16 09 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/a6e78c9e-88ca-44b3-88eb-54bb0418615f">
+
+   d. Click on Format menu and select “Parameter” and select the required formatting details for the table
+
+   <img width="132" alt="Screenshot 2024-06-21 at 3 16 19 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/59337f5b-b5ba-4b71-a9e1-e39a71048c58">
+
+10. RackNStack
+  
+  <img width="590" alt="Screenshot 2024-06-21 at 3 16 34 PM" src="https://github.com/jeevareha/Shopping-Trends-Analysis/assets/32441508/5a9043fe-522e-437e-b104-9eaab783f0c2">
+
+
