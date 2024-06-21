@@ -2,6 +2,7 @@
 
 # Analyzing “Shopping Trends” public dataset
 
+### Tableau Dashboard : https://public.tableau.com/app/profile/jeevareha.krishnaraj/viz/CustomerPurchaseInsights_17147793120990/Dashboard1
 
 ## Customer Purchase Insights
 
